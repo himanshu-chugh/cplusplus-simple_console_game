@@ -28,7 +28,7 @@ int check_move(char **map ,int grid_size ,char move, int current_x,int current_y
         {return 1;}
         else
         {
-            cout<<"help\n";
+            //cout<<"help\n";
             return 0;
         }
         
