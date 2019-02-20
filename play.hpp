@@ -6,7 +6,7 @@ using namespace std;
 
 int check_move(char **map ,int grid_size ,char move, int current_x,int current_y){
     if(move == 'w'){
-        if(map[current_x][current_y+1] == '-' && ((current_y+1)<(grid_size-1)))
+        if(map[current_x][current_y+1] == '-' && ((current_y+1)<(grid_size)))
         return 1;
         else
         {
@@ -33,7 +33,7 @@ int check_move(char **map ,int grid_size ,char move, int current_x,int current_y
         
     }
     else if(move == 'd'){
-        if(map[current_x+1][current_y] == '-' && ((current_x+1)<(grid_size-1)))
+        if(map[current_x+1][current_y] == '-' && ((current_x+1)<(grid_size)))
         return 1;
         else
         {
