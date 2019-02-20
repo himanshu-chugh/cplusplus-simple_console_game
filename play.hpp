@@ -6,8 +6,8 @@ using namespace std;
 
 int check_move(char **map ,int grid_size ,char move, int current_x,int current_y){
     if(move == 'w'){
-        if(map[current_x][current_y+1] == '-' && ((current_y+1)<(grid_size)))
-        return 1;
+        if(((current_y+1)<(grid_size)) && map[current_x][current_y+1] == '-' )
+        {return 1;}
         else
         {
             return 0;
@@ -15,8 +15,8 @@ int check_move(char **map ,int grid_size ,char move, int current_x,int current_y
         
     }
     else if(move == 's'){
-        if(map[current_x][current_y-1] == '-' && (current_y-1>=0))
-        return 1;
+        if((current_y-1>=0) && map[current_x][current_y-1] == '-')
+        {return 1;}
         else
         {
             return 0;
@@ -24,17 +24,18 @@ int check_move(char **map ,int grid_size ,char move, int current_x,int current_y
         
     }
     else if(move == 'a'){
-        if(map[current_x-1][current_y] == '-'  && (current_x-1>=0))
-        return 1;
+        if((current_x-1>=0) && map[current_x-1][current_y] == '-'   )
+        {return 1;}
         else
         {
+            cout<<"help\n";
             return 0;
         }
         
     }
     else if(move == 'd'){
-        if(map[current_x+1][current_y] == '-' && ((current_x+1)<(grid_size)))
-        return 1;
+        if( ((current_x+1)<(grid_size)) && map[current_x+1][current_y] == '-' )
+        {return 1;}
         else
         {
             return 0;
