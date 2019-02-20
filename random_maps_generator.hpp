@@ -46,7 +46,7 @@ int prob(int p){
 
 }
 
-char** maps(int n, int share){
+char** maps(int n){
     
     srand(time(0));
     char **map = new char*[n];
@@ -67,7 +67,7 @@ char** maps(int n, int share){
     map[X][Y]='-';
 
 
-    for(int i=0;i<(n*n)/share;i++){
+    for(int i=0;i<(n*n)/2;i++){
         //  REGION (0) CODE
         if( X>0 && X<n-1 && Y>0 && Y<n-1 ){
             move = prob(4);

@@ -9,8 +9,8 @@ int main(){
 
     int score = 1,total = 0;
     char **global_game_map;
-    int n=10,s=1;
-    global_game_map = maps(n,s);
+    int n=10;
+    global_game_map = maps(n);
     int status;
     cout<<endl<<endl<<endl;
 
@@ -101,7 +101,7 @@ int main(){
     }
     else if(status == 0){
         cout<<"\tOUT :P \n";
-        cout<<"\tYOUR SCORE IS : "<<score<<" OUT OF:"<<total<<endl;        
+        cout<<"\tYOUR SCORE IS : "<<score<<" OUT OF: "<<total<<endl;        
         break;
     }
     else
