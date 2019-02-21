@@ -1,4 +1,5 @@
-#include"random_maps_generator.hpp"
+//#include"random_maps_generator.hpp"
+#include"random_maps_gen.hpp"
 #include"play.hpp"
 #include<conio.h>
 
