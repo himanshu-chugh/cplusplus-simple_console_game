@@ -1,3 +1,3 @@
 # cplusplus-simple_console_game
 c++ console game only for windows.
-only for windows because conio.h library is used for console operations (conio.h is not available for gcc compliers)
+only for windows because conio.h library is used for console operations.
